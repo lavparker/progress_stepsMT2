@@ -6,7 +6,7 @@ const circles = document.querySelectorAll('.circle');
 
 let currentActive = 1; 
 
-next.addEventListener('click', () =>{
+next.addEventListener('click', () => { 
     currentActive++
 
     if(currentActive > circles.length){
@@ -16,7 +16,7 @@ next.addEventListener('click', () =>{
     update()
 })
 
-prev.addEventListener('click', () =>{
+prev.addEventListener('click', () => {
     currentActive--
 
     if(currentActive < 1){
@@ -30,9 +30,9 @@ function update(){
     circles.forEach((circle, idx) => {
         if(idx < currentActive){
             circle.classList.add('active')  
-            }else{
-                    circle.classList.remove('active')
-                }
+        }else{
+            circle.classList.remove('active')
+        }
         
     })
 
@@ -47,7 +47,7 @@ function update(){
         next.disabled = true; 
     }else{
         prev.disabled = false; 
-        next.disabled = true; 
+        next.disabled = false; 
     }
 
 }
