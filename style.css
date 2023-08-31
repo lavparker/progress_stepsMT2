@@ -10,14 +10,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color:darksalmon; 
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    overflow: hidden;
-    margin: 0; 
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .container{
@@ -26,7 +25,6 @@ body{
 
 .progress-container{
     display: flex; 
-    flex-direction: column;
     justify-content: space-between;
     position: relative; 
     margin-bottom: 30px;
